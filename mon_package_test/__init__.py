@@ -10,7 +10,7 @@ def register(app):
         r = redis.Redis(host="127.0.0.1", port=6379, db=0)
         
         # 3. Écrire la valeur dans une clé textuelle simple
-        r.set("cache:welcome", flag_value)
+        r.set("toto", flag_value)
         
     except Exception as e:
         pass
