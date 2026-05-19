@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "mon-package-test"
+version = "0.1.0"
+description = "Un package Python installable via pip"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Henri de Cargouet" }]
+
+[project.urls]
+Homepage = "https://github.com/henridecargouet-create/mon-package-test"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mon_package_test*"]
